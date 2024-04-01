@@ -129,13 +129,13 @@
 
 // Task 10
 
-function* randomNum(start, end) {
+function* randomInt(start, end) {
     while (true) {
         yield Math.floor(Math.random() * (end - start + 1)) + start;
     }
 }
 
-const randomNums = randomNum(0, 17);
+const randomNums = randomInt(0, 17);
 for (let i = 0; i < 17; i++) {
     alert(randomNums.next().value);
 }
